@@ -47,6 +47,7 @@ uvicorn main:app --reload
 
 ### 3. Frontend Setup (React/Vite)
 Open a **new** terminal window, navigate into the `frontend` directory, and set up your Node environment:
+(All the files except the one uploaded in this repository will be same as that of downloaded from https://nodejs.org/)
 
 ```bash
 # Navigate into the frontend folder
