@@ -22,12 +22,12 @@ A full-stack, real-time analytics dashboard designed to visualize, filter, and m
 ### Prerequisites
 * Python 3.9+
 * Node.js & npm (v18+)
-* MySQL Server (e.g., XAMPP or standalone)
+* MySQL Server (e.g., XAMPP)
 
 ### 1. Database Configuration
 1. Start your local MySQL server.
 2. Create a new database (e.g., `directory_db`).
-3. Execute the `schema.sql` file provided in the root directory to generate the `listing_table` structure.
+3. Execute the `listing_table.sql` file provided in the root directory to generate the `listing_table` structure.
 4. Update the database connection string in `database.py` with your local credentials.
 
 ### 2. Backend Setup (FastAPI)
@@ -43,3 +43,21 @@ pip install -r requirements.txt
 
 # Start the FastAPI server
 uvicorn main:app --reload
+```
+
+### 3. Frontend Setup (React/Vite)
+*Note: All React application files are housed in the `frontend` directory.*
+
+**Step 3.1: Sync the Source Files**
+If you downloaded the frontend project files separately (e.g., from the Windows `directory-dashboard` backup), extract and copy all of those files directly into the `frontend` folder of this repository. When prompted by your operating system, choose to **replace/overwrite** the existing files with the same names to ensure you are using the latest compiled versions.
+
+**Step 3.2: Start the Environment**
+Open a **new** terminal window, navigate into the `frontend` directory (where the `package.json` file is located), and initialize the Node environment:
+
+```bash
+# Install frontend dependencies (Tailwind CSS, Recharts, Lucide React, etc.)
+npm install
+
+# Start the Vite development server
+npm run dev
+```
