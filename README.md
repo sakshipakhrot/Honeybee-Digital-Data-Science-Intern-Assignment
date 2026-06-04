@@ -46,15 +46,12 @@ uvicorn main:app --reload
 ```
 
 ### 3. Frontend Setup (React/Vite)
-*Note: All React application files are housed in the `frontend` directory.*
-
-**Step 3.1: Sync the Source Files**
-If you downloaded the frontend project files separately (e.g., from the Windows `directory-dashboard` backup), extract and copy all of those files directly into the `frontend` folder of this repository. When prompted by your operating system, choose to **replace/overwrite** the existing files with the same names to ensure you are using the latest compiled versions.
-
-**Step 3.2: Start the Environment**
-Open a **new** terminal window, navigate into the `frontend` directory (where the `package.json` file is located), and initialize the Node environment:
+Open a **new** terminal window, navigate into the `frontend` directory, and set up your Node environment:
 
 ```bash
+# Navigate into the frontend folder
+cd frontend
+
 # Install frontend dependencies (Tailwind CSS, Recharts, Lucide React, etc.)
 npm install
 
